@@ -1,1 +1,10 @@
-<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="kbase-test" default="true" eventProcessingMode="stream" equalsBehavior="identity">
+    <ksession name="ksession-test" type="stateful" default="true" clockType="realtime">
+      <workItemHandlers>
+        <workItemHandler type="new com.esrx.ref.test.handler.TestHandler()" name="Test"/>
+        <workItemHandler type="new org.jbpm.process.workitem.email.EmailWorkItemHandler(“mail4.express-scripts.com”, “25”, null, null)" name="Email"/>
+      </workItemHandlers>
+    </ksession>
+  </kbase>
+</kmodule>
