@@ -3,7 +3,7 @@
     <ksession name="ksession-test" type="stateful" default="true" clockType="realtime">
       <workItemHandlers>
         <workItemHandler type="com.esrx.ref.test.handler.TestHandler" name="Test"/>
-        <workItemHandler type="new org.jbpm.process.workitem.email.EmailWorkItemHandler(“mail4.express-scripts.com”, “25”, null, null)" name="Email"/>
+        <workItemHandler type="org.jbpm.process.workitem.email.EmailWorkItemHandler" name="Email"/>
       </workItemHandlers>
     </ksession>
   </kbase>
