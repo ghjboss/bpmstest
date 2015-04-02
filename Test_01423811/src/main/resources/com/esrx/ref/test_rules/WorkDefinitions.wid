@@ -55,6 +55,34 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     ],
     "displayName" : "REST",
     "icon" : "defaultservicenodeicon.png"
+  ],
+
+ [
+    "name" : "Test",
+    "parameters" : [
+        "in_agendaGroup" : new StringDataType(),
+        "in_emailNotificationType" : new StringDataType()
+
+    ],
+    "results" : [
+        "out_emailNotification" : new ObjectDataType()
+    ],
+    "displayName" : "Test",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+
+ [
+    "name" : "Test2",
+    "parameters" : [
+        "in_agendaGroup" : new StringDataType(),
+        "in_emailNotificationType" : new StringDataType()
+
+    ],
+    "results" : [
+        "out_emailNotification" : new ObjectDataType()
+    ],
+    "displayName" : "Test2",
+    "icon" : "defaultservicenodeicon.png"
   ]
 
 ]
