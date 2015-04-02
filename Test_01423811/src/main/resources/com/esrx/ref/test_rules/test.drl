@@ -1,2 +1,7 @@
 package com.esrx.ref.test_rules;
 
+rule "mytest1"
+when
+then
+System.out.println(" mytest2 pkg 2 add, now test pkg 2 rules");
+end
